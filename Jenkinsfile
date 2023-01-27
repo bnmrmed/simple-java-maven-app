@@ -7,6 +7,7 @@ pipeline {
           label 'docker-gce'
           //reuseNode true
         }
+      }
     stages {
         stage('Build') { 
             steps {
