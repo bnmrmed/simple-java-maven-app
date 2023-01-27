@@ -15,7 +15,8 @@ pipeline {
                 sh 'pwd'
                 sh 'ls'
                 sh 'echo maven s version'
-                sh 'mvn -v'  
+                sh 'mvn -v'
+                sh 'sleep 3000'
             }
         }
     }
