@@ -13,10 +13,7 @@ pipeline {
             steps {
                 sh 'echo ls '
                 sh 'pwd'
-                sh 'ls'
-                sh 'echo maven s version'
-                sh 'mvn -v'
-                sh 'sleep 3000'
+                sh 'mvn -B -DskipTests clean package'
             }
         }
     }
