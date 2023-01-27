@@ -1,7 +1,7 @@
 pipeline {
-    agent {
-        agent {label 'docker-gce'}
-    }
+        agent {
+            label 'docker-gce'
+        }
     stages {
         stage('Build') { 
             steps {
