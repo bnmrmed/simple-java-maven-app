@@ -14,6 +14,8 @@ pipeline {
                 sh 'echo ls '
                 sh 'pwd'
                 sh 'ls'
+                sh 'echo maven s version'
+                sh 'mvn -v'  
             }
         }
     }
