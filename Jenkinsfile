@@ -15,7 +15,7 @@ pipeline {
                 sh 'echo ls '
                 sh 'pwd'
                 sh 'mvn -B -DskipTests clean package'
-                sh 'sleep 3000'  
+                sh 'cat /root/.m2/docker-gce.txt'  
             }
         }
     }
