@@ -12,10 +12,12 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'echo ls '
+                sh 'echo pwd '
                 sh 'pwd'
                 sh 'mvn -B -DskipTests clean package'
-                sh 'cat /root/.m2/docker-gce.txt'  
+                sh 'echo ls '
+                sh 'ls -al /datas'
+                sh 'cat /datas/docker-gce.txt'  
             }
         }
     }
