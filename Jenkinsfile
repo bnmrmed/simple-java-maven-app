@@ -13,6 +13,7 @@ pipeline {
         stage('Build') { 
             steps {
                 sh 'echo pwd '
+                sh 'whomai'
                 sh 'pwd'
                 sh 'echo ls '
                 sh 'ls -al /datas' 
