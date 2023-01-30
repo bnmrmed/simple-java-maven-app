@@ -14,10 +14,10 @@ pipeline {
             steps {
                 sh 'echo pwd '
                 sh 'pwd'
-                sh 'mvn -B -DskipTests clean package'
                 sh 'echo ls '
-                sh 'ls -al /datas'
-                sh 'cat /datas/docker-gce.txt'  
+                sh 'ls -al /datas' 
+                sh 'mvn -B -DskipTests package'
+
             }
         }
     }
