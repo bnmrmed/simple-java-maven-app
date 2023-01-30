@@ -17,7 +17,7 @@ pipeline {
                 sh 'echo ls '
                 sh 'ls -al /datas' 
                 sh 'mvn -B -DskipTests package'
-
+                sh 'ls -al /datas'
             }
         }
     }
