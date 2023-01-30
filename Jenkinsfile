@@ -5,7 +5,7 @@ pipeline {
           registryUrl 'https://agilefabric-docker-virtual.enterpriserepo.fr.carrefour.com/'
           //registryCredentialsId 'af_private_registry_sa'
           label 'docker-gce'
-          args '-e MAVEN_OPTS="-Duser.home=./" -v /datas:/tmp/workspace/mvn-docker-gce'
+          args '-e MAVEN_OPTS="-Duser.home=/datas" -v /datas:/datas'
           //reuseNode true
         }
       }
