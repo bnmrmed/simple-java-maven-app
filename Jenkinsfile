@@ -12,9 +12,6 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'echo pwd '
-                sh 'whomai'
-                sh 'pwd'
                 sh 'echo ls '
                 sh 'ls -al /datas' 
                 sh 'mvn -B -DskipTests install'
