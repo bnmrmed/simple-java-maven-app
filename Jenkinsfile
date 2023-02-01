@@ -16,6 +16,7 @@ pipeline {
                 sh 'ls -al /datas' 
                 sh 'mvn -B -DskipTests install'
                 sh 'ls -al /datas'
+                sh 'ls -al /datas/docker-backend'
             }
         }
     }
