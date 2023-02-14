@@ -12,10 +12,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'echo ls '
-                sh 'ls -al /datas' 
                 sh 'mvn -B -DskipTests install'
-                sh 'ls -al /datas'
             }
         }
     }
