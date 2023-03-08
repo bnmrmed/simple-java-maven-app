@@ -10,6 +10,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
+                sh 'sleep 3600'
                 sh 'mvn -B -DskipTests install'
             }
         }
