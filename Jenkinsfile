@@ -1,6 +1,6 @@
 pipeline {
       agent {
-        any {
+        docker {
           image 'maven:3-jdk-11'
           registryUrl 'https://agilefabric-docker-virtual.enterpriserepo.fr.carrefour.com/'
           label 'jenkins-gce'
